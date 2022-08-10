@@ -1,0 +1,224 @@
+body{
+  background-color: #fff;
+}
+.Navbar {
+  background-color: #035229;
+  width: 100%;
+  height: 80px;
+}
+h1{
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+  color: #fff;
+  display: block;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+.Navli{
+  display: flex;
+  padding-top: 10px;
+  margin-left: 15px;
+  font-size: 25px;
+}
+.textbox1{
+  display: block;
+  float: left;
+  margin-left: 30px;
+  width: 600px;
+  height: auto;
+  border: 2px solid green;
+  padding: 5px:
+}
+table, tr, th, td{
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  background-color: #4e5454;
+  bottom: 0px;
+}
+.MiniGame{
+  float: right;
+  margin-right: 70px;
+  margin-top: 50px;
+}
+* {
+  box-sizing: border-box;
+}
+.slideshow{ /* This will set the size and position of the slideshow */
+  width:100%;
+  height: 75vh;
+  position: relative;
+  overflow:hidden;
+  margin: 5px;
+  border: 2px solid #fff;
+}
+.slideshow-item{ /* This will make each image sit on top of each other*/
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 101s infinite;
+}
+.slideshow-item img{ /* This CSS will set the images and slideshow as a background image and set it to cover the entire page. */
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.slideshow-item:nth-child(1), /* The below CSS will set the time delay of the animation for the images and text to chnage */
+.slideshow-item:nth-child(1) img{
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+  animation-delay: 20s;
+}
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img{
+  animation-delay: 30s;
+}
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img{
+  animation-delay: 40s;
+}
+.slideshow-item:nth-child(6),
+.slideshow-item:nth-child(6) img{
+  animation-delay: 50s;
+}
+.slideshow-item:nth-child(7),
+.slideshow-item:nth-child(7) img{
+  animation-delay: 60s;
+}
+.slideshow-item:nth-child(8),
+.slideshow-item:nth-child(8) img{
+  animation-delay: 70s;
+}
+.slideshow-item:nth-child(9),
+.slideshow-item:nth-child(9) img{
+  animation-delay: 80s;
+}
+.slideshow-item:nth-child(10),
+.slideshow-item:nth-child(10) img{
+  animation-delay: 90s;
+}
+.slideshow-item-text{ /* This will create a black text box in the middle left handside of the screen for text to be visible against*/
+  max-width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translateY(-50%);
+  background-color: black;
+  color: #fff;
+  opacity: 75%;
+  padding:inherit;
+}
+.slideshow-item-text h5{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.slideshow-item-text p{
+  margin-left: 5px;
+  font-size: 5px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+@keyframes cycleImages {
+  10%{
+    opacity:1;
+  }
+  20%{
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1000px){
+  .slideshow-item-text{
+    max-width: 70%;
+    padding: 5px 1px;
+  }
+}
+.slideshow-item-text h5{
+  font-size: 50px;
+}
+@media screen and (max-width: 767px){
+  .slideshow-item-text{
+    max-width: 10%;
+    padding: 2rem;
+    top: initial;
+    bottom:0;
+    transform: initial;
+  }
+}
+.Form{ /* form to allow customers to signup to mail list */
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+}
+.SignUpHere{ /* this creates the box around the sign up form */
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #035229;
+  display: flex;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #035229;
+  color: #fff;
+  position: fixed;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container{
+  display: block;
+  float: left;
+  position: fixed;
+  max-width: 620px;
+  max-height: 400px;
+  bottom: 150px;
+  margin-left: 20px;
+}
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+  }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
